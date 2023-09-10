@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Prints numbers from 0 to 9.
  *
- * Return; Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-int num;
-while  (num < 10)
-{
-printf("%d" , num);
-num += 1;
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	putchar('\n');
+	return (0);
 }
-printf("\n");
-return (0);
-}
+
