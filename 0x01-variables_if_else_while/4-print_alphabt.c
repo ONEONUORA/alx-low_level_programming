@@ -1,24 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
- * main - Entry point
+ * main - Prints the alphabet without q and e.
  *
- * Return: always 0 (success)
+ * Return: Always 0 (Success)
  */
-int main(void);
+int main(void)
 {
-int lowerCase = 'a';
-while (lowerCase <= 'z')
-{
-if (lowerCase == 'e' || lowerCase == 'q')
-{
-lowerCase += 1;
+	int i;
+
+	for (i = 97; i < 123; i++)
+	{
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-else
-{
-putchar(lowerCase);
-lowerCase += 1;
-}
-}
-putchar('\n'):
-return (0);
-}
+
